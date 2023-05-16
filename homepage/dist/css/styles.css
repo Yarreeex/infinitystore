@@ -3551,22 +3551,22 @@ textarea.form-control-lg {
   left: auto;
 }
 
-@media (min-width: 576px) {
-  .dropdown-menu-sm-start {
-    --bs-position: start;
+@media (max-width: 575.98px) {
+  .dropdown-menu-end {
+    --bs-position: start !important;
+    transform-origin: top left !important;
   }
-  .dropdown-menu-sm-start[data-bs-popper] {
-    right: auto;
-    left: 0;
+  .dropdown-menu-end[data-bs-popper] {
+    right: auto !important;
+    left: 0 !important;
   }
-  .dropdown-menu-sm-end {
-    --bs-position: end;
-  }
-  .dropdown-menu-sm-end[data-bs-popper] {
-    right: 0;
-    left: auto;
+  .dropdown-menu-end.show {
+    top: 100% !important;
+    margin-top: 0.5rem !important;
   }
 }
+
+
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
     --bs-position: start;

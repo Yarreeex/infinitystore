@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Infinity Gaming Store</title>
@@ -34,33 +35,34 @@
                         </li>
                     </ul>
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
-                          </button>                          
-                        <ul class="dropdown-menu dropdown-menu-end dropdown-scrollbar" aria-labelledby="cartDropdown">
-                          <li>
-                            <div class="cart">
-                              <ul id="cart-list" style="list-style: none;"></ul>
-                              <div class="cart-footer">
-                                <hr>
-                                <div class="d-flex justify-content-between">
-                                  <span class="total-items"></span>
-                                  <span class="total-price"></span>
-                                </div>
+                      <button class="btn btn-outline-dark dropdown-toggle" type="button" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                      </button>                          
+                      <ul class="dropdown-menu dropdown-menu-end dropdown-scrollbar" aria-labelledby="cartDropdown">
+                        <li>
+                          <div class="cart">
+                            <ul id="cart-list" style="list-style: none;"></ul>
+                            <div class="cart-footer">
+                              <hr>
+                              <div class="d-flex justify-content-between">
+                                <span class="total-items"></span>
+                                <span class="total-price"></span>
                               </div>
                             </div>
-                          </li>
-                          <hr>
-                          <li>
-                            <div class="d-flex justify-content-between">
-                              <button type="button" class="btn btn-outline-dark reset-btn">Delete</button>
-                              <a href="https://r.mtdv.me/infinity"><button type="button" class="btn btn-dark checkout-btn">Checkout</button></a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+                          </div>
+                        </li>
+                        <hr>
+                        <li>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-dark reset-btn">Delete</button>
+                            <a href="https://r.mtdv.me/infinity"><button type="button" class="btn btn-dark checkout-btn" style="list-style: none;">Checkout</button></a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
                     
                     
                 </div>
@@ -238,18 +240,22 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Point Blank</h5>
-                                    <h6 class="fw-bolder">12,000 Cash</h6>
+                                    <div class="item">
+                                      <h5 class="fw-bolder">Point Blank</h5>
+                                      <h6 class="fw-bolder">12,000 Cash</h6>
+                                    </div>
                                     <!-- Product price-->
-                                    IDR 100K
+                                    <span class="price">IDR 100K</span>
+                                  </div>
                                 </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                  <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" onclick="addToCart('Point Blank 12,000 Cash', 100)">Add to cart</a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
@@ -260,27 +266,30 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Genshin Impact</h5>
-                                    <h6 class="fw-bolder">1080 Crystals</h6>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                    <div class="item">
+                                      <h5 class="fw-bolder">Genshin Impact</h5>
+                                      <h6 class="fw-bolder">1080 Crystals</h6>
                                     </div>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">IDR 170K</span>
-                                    IDR 100K
+                                    <span class="price">IDR 100K</span>
+                                  </div>
                                 </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                  <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" onclick="addToCart('Genshin Impact 1080 Crystals', 100)">Add to cart</a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
@@ -289,27 +298,29 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">League of Legends Wild Rift</h5>
-                                    <h6 class="fw-bolder">2400 Wild Cores</h6>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                    <div class="item">
+                                      <h5 class="fw-bolder">League of Legends Wild Rift</h5>
+                                      <h6 class="fw-bolder">2400 Wild Cores</h6>
                                     </div>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
                                     <!-- Product price-->
-                                    IDR 200K
+                                    <span class="price">IDR 200K</span>
+                                  </div>
                                 </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                  <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" onclick="addToCart('Wild Rift 2400 Wild Cores', 200)">Add to cart</a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- Footer-->
