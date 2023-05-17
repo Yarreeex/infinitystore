@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Sign Up</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/infinitywhite.png">
+</head>
+<body>
+    <section class="portal">
+        <form action="#">
+            <div class="title">
+                <h1 class="title"><img src="assets/infinity.svg" alt="Infinity"> Infinity</h1>
+                <p>Welcome! Please create your account.</p>
+            </div>
+            <button id="google-signin">
+                <img src="assets/google-logo.svg" alt="">
+                Sign up with Google
+            </button>
+            <span>or</span>
+            <div class="input-field">
+                <input type="text" id="fullname" placeholder=" ">
+                <label for="fullname">Username</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" placeholder=" ">
+                <label for="email">Email Address</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" placeholder=" ">
+                <label for="password">Password</label>
+                <img id="show-hide-pass" src="assets/hide-eye.svg" alt="">
+            </div>
+            <div class="input-field">
+                <input type="password" id="confirm-password" placeholder=" ">
+                <label for="confirm-password">Confirm Password</label>
+                <img id="show-hide-confirm-pass" src="assets/hide-eye.svg" alt="">
+            </div>
+            <a href="../pilih game/pilih_game.html" id="signin">Sign Up</a>
+            <p id="login">
+                Already have an account?
+                <a href="../index.html">Log in here</a>
+            </p>
+        </form>
+    </section>
+    <script src="signup.js"></script>
+</body>
+</html>

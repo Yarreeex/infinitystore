@@ -160,6 +160,14 @@ span::after{
     cursor: pointer;
 }
 
+#show-hide-confirm-pass{
+    width: 1.5rem;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    cursor: pointer;
+}
+
 #forgot-pass{
     text-decoration: none;
     color: var(--primary);
@@ -180,6 +188,17 @@ span::after{
     font-size: .9rem;
     text-align: center;
     color: var(--secondary);
+}
+
+#login{
+    font-size: .9rem;
+    text-align: center;
+    color: var(--secondary);
+}
+
+#login a{
+    text-decoration: none;
+    color: var(--primary);
 }
 
 #signup a{
