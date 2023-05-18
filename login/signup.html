@@ -13,7 +13,7 @@
 </head>
 <body>
     <section class="portal">
-        <form action="#">
+        <form action="../pilih-game/pilih_game.html" method="GET">
             <div class="title">
                 <h1 class="title"><img src="assets/infinity.svg" alt="Infinity"> Infinity</h1>
                 <p>Welcome! Please create your account.</p>
@@ -24,11 +24,11 @@
             </button>
             <span>or</span>
             <div class="input-field">
-                <input type="text" id="fullname" placeholder=" ">
+                <input type="text" id="fullname" placeholder=" " required>
                 <label for="fullname">Username</label>
             </div>
             <div class="input-field">
-                <input type="email" id="email" placeholder=" ">
+                <input type="email" id="email" placeholder=" " required>
                 <label for="email">Email Address</label>
             </div>
             <div class="input-field">
@@ -41,7 +41,8 @@
                 <label for="confirm-password">Confirm Password</label>
                 <img id="show-hide-confirm-pass" src="assets/hide-eye.svg" alt="">
             </div>
-            <a href="../pilih game/pilih_game.html" id="signin">Sign Up</a>
+            <a href="../pilih-game/pilih_game.html" id="signin" onclick="saveUsername()">Sign Up</a>
+
             <p id="login">
                 Already have an account?
                 <a href="../index.html">Log in here</a>

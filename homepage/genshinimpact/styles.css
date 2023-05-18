@@ -3401,6 +3401,7 @@ textarea.form-control-lg {
 .dropdown-menu {
   background-color: #f8f9fa;
   border: none;
+  width: fit-content;
 }
 
 .dropdown-item {
@@ -3468,7 +3469,7 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 .dropdown-toggle::after {
-  display: inline-block;
+  display: none;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
@@ -3900,6 +3901,116 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+/* Profile Image */
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  width: fit-content;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa;
+  color: #000000;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #dee2e6;
+  margin: 8px 0;
+}
+
+/* Profile Info */
+.navbarDropdownProfile{
+  display: flex;
+  width: fit-content;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.username {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 8px;
+}
+
+
+.profile-info {
+  background-image: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.profile-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  color: #6610f2;
+  background-image: none;
+}
+
+.profile-text {
+  font-size: 14px;
+}
+
+/* Profile Level */
+.profile-level {
+  font-weight: bold;
+}
+
+/* Profile Email */
+.profile-email {
+  color: #000000;
+}
+
+/* Profile Setting */
+.profile-setting {
+  color: #000000;
+}
+
+
+/* Navbar Brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Responsive Collapse Button Color */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4430,6 +4541,23 @@ textarea.form-control-lg {
 }
 
 .card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: 0.375rem;
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(0.375rem - 1px);
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: #fff;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
   flex-direction: column;

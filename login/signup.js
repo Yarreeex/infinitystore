@@ -95,3 +95,18 @@ window.addEventListener('load', function(e) {
   }, false);
 
 }, false);
+
+
+document.getElementById('signin').addEventListener('click', function(event) {
+  event.preventDefault(); // Mencegah aksi default dari tombol Sign Up
+
+  var username = document.getElementById('fullname').value;
+  var email = document.getElementById('email').value;
+
+  // Simpan nilai username dan email ke dalam localStorage
+  localStorage.setItem('username', username);
+  localStorage.setItem('email', email);
+
+  // Alihkan pengguna ke halaman utama (homepage)
+  window.location.href = '../pilih-game/pilih_game.html';
+});

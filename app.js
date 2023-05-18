@@ -63,3 +63,20 @@ window.addEventListener('load', function(e) {
   }, false);
 
 }, false);
+
+document.getElementById('signin').addEventListener('click', function(event) {
+  event.preventDefault(); // Mencegah aksi default dari tombol Sign In
+
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  // Periksa apakah akun ada atau tidak
+  // Ganti kode di bawah ini dengan logika pemeriksaan akun Anda
+  if (username === 'admin' && password === 'admin') {
+    // Jika akun ditemukan, alihkan pengguna ke halaman yang sesuai
+    window.location.href = 'pilih-game/pilih_game.html';
+  } else {
+    // Jika akun tidak ditemukan, tampilkan alert
+    alert('Akun tidak ditemukan');
+  }
+});

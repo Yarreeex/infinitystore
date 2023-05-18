@@ -22,18 +22,56 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownProfile" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="profile-info">
+                              <img src="../homepage/dist/assets/2169.png" alt="Profile Image" class="profile-icon" />
+                              <span class="username" id="display-username">Username</span>
+
+                            </div>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfile">
+                            <li>
+                              <div class="profile-info">
+                                <img src="../homepage/dist/assets/2169.png" alt="Profile Image" class="profile-icon" />
+                                <span class="profile-text">
+                                  <span class="profile-level">Level:</span> Kroco
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="profile-info">
+                                <i class="bi bi-envelope profile-icon"></i>
+                                <span class="profile-text">
+                                    <span class="profile-email">Email: </span>
+                                    <span class="profile-email" id="display-email">Email</span>
+                                </span>
+                              </div>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <div class="profile-info">
+                                <i class="bi bi-gear profile-icon"></i>
+                                <span class="profile-text profile-setting">Settings</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">Discount Items</a></li>
-                            </ul>
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownShop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownShop">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">Discount Items</a></li>
+                          </ul>
                         </li>
-                    </ul>
+                      </ul>
+                      
+                      
+                    
                     <div class="dropdown">
                       <button class="btn btn-outline-dark dropdown-toggle" type="button" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi-cart-fill me-1"></i>
@@ -94,7 +132,7 @@
                     </div>
                     
                     <div class="col mb-5">
-                        <a href="../homepage/valorant/valorant.html" class="card h-100">
+                        <a href="../homepage/mobilelegends/mobilelegends.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/mobilelegends_450x300.jpg" alt="Mobile Legends" />
@@ -106,7 +144,7 @@
                     </div>
 
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <a href="../homepage/steam/steam.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/vecteezy_steam-logo-vector-steam-icon-free-vector_20336039_450x300.jpg" alt="Steam" />
@@ -114,11 +152,11 @@
                                     <h5 class="overlay-text">Steam</h5>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <a href="../homepage/pubgm/pubgm.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/pubg_450x300.png" alt="Steam" />
@@ -126,11 +164,11 @@
                                     <h5 class="overlay-text">PUBG Mobile</h5>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <a href="../homepage/pointblank/pointblank.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/pb_450x300.png" alt="Point Blank" />
@@ -138,11 +176,11 @@
                                     <h5 class="overlay-text">Point Blank</h5>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <a href="../homepage/genshinimpact/genshin.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/genshin_450x300.png" alt="Genshin Impact" />
@@ -150,11 +188,11 @@
                                     <h5 class="overlay-text">Genshin Impact</h5>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="col mb-5">
-                        <a href="../homepage/dist/index.html" class="card h-100">
+                        <a href="../homepage/wildrift/wildrift.html" class="card h-100">
                             <!-- Product image-->
                             <div class="image-container">
                                 <img class="card-img-top" src="../homepage/dist/assets/wildrift_450x300.png" alt="Wild Rift" />

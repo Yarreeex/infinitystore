@@ -109,3 +109,28 @@ window.addEventListener('load', function(e) {
   }, false);
 
 }, false);
+
+// Mendapatkan nilai parameter username dan email dari URL
+function getParameterByName(name) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var url = window.location.href;
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+  var results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var username = localStorage.getItem('username');
+    var displayUsername = document.getElementById('display-username');
+    if (username) {
+      displayUsername.textContent = username;
+    }
+
+    var email = localStorage.getItem('email');
+    var displayEmail = document.getElementById('display-email')
+    if (email) {
+      displayEmail.textContent = email;
+    }
+  });
