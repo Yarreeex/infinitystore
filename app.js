@@ -67,16 +67,34 @@ window.addEventListener('load', function(e) {
 document.getElementById('signin').addEventListener('click', function(event) {
   event.preventDefault(); // Mencegah aksi default dari tombol Sign In
 
+  var savedUsername = localStorage.getItem('username');
+  var savedPassword = localStorage.getItem('password');
+
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 
-  // Periksa apakah akun ada atau tidak
-  // Ganti kode di bawah ini dengan logika pemeriksaan akun Anda
-  if (username === 'admin' && password === 'admin') {
-    // Jika akun ditemukan, alihkan pengguna ke halaman yang sesuai
-    window.location.href = 'pilih-game/pilih_game.html';
-  } else {
-    // Jika akun tidak ditemukan, tampilkan alert
-    alert('Akun tidak ditemukan');
+  // Validasi username dan password
+
+  if (username !== savedUsername || password !== savedPassword) {
+    alert('Account not found');
+    return;
+  }
+
+  // Lanjutkan proses login
+  // ...
+  window.location.href = 'pilih-game/pilih_game.html';
+});
+
+user.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    pass.focus();
+  }
+});
+
+pass.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("signin").click();
   }
 });

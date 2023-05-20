@@ -102,11 +102,54 @@ document.getElementById('signin').addEventListener('click', function(event) {
 
   var username = document.getElementById('fullname').value;
   var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var confirmPassword = document.getElementById('confirm-password').value;
+
+    // Validasi password
+    if (password.length < 8) {
+      alert('Password must be at least 8 characters long');
+      return;
+    }
+  
+    // Validasi konfirmasi password
+    if (password !== confirmPassword) {
+      alert('Password and confirm password do not match');
+      return;
+    }
 
   // Simpan nilai username dan email ke dalam localStorage
   localStorage.setItem('username', username);
   localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
 
   // Alihkan pengguna ke halaman utama (homepage)
   window.location.href = '../pilih-game/pilih_game.html';
+});
+
+fullname.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    email.focus();
+  }
+});
+
+email.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    password.focus();
+  }
+});
+
+password.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    confirmPassword.focus();
+  }
+});
+
+confirmPassword.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById('signin').click();
+  }
 });
