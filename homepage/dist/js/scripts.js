@@ -134,3 +134,41 @@ document.addEventListener('DOMContentLoaded', function() {
       displayEmail.textContent = email;
     }
   });
+
+//LEVEL
+// Ambil elemen dengan ID "display-level"
+var levelElement = document.getElementById('display-level');
+
+// Simpan total exp pengguna
+var totalExp = 0;
+
+// Fungsi untuk menentukan tingkatan level berdasarkan total exp
+function getLevel(exp) {
+    if (exp >= 1501) {
+        return 'Legend';
+    } else if (exp >= 1001) {
+        return 'Master';
+    } else if (exp >= 601) {
+        return 'Professional';
+    } else if (exp >= 301) {
+        return 'Intermediate';
+    } else if (exp >= 101) {
+        return 'Newbie';
+    } else {
+        return 'Kroco';
+    }
+}
+
+// Fungsi untuk menampilkan tingkatan level dan exp pengguna
+function displayLevel() {
+    levelElement.textContent = getLevel(totalExp);
+}
+
+// Fungsi untuk menambahkan exp pengguna
+function addExp(amount) {
+    totalExp += amount;
+    displayLevel();
+}
+
+// Contoh penggunaan: tambahkan 50 exp saat pengguna melakukan pembelian
+addExp(50);

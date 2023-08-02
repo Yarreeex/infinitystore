@@ -7318,6 +7318,7 @@ textarea.form-control-lg {
 .image-container {
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .overlay {
@@ -7339,6 +7340,10 @@ textarea.form-control-lg {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Ganti angka ini untuk menyesuaikan tingkat zoom */
 }
 
 .image-container:hover .overlay {

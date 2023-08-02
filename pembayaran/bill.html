@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Infinity Gaming Store</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../homepage/dist/assets/infinitywhite.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bill.css" rel="stylesheet" />
+    </head>
+</head>
+<body>
+    <h1>Payment Details</h1>
+    <form id="paymentForm">
+        <label for="name">Game ID</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required><br>
+
+        <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option value="">Select payment method</option>
+                                <option value="creditCard">Dana</option>
+                                <option value="bankTransfer">OVO</option>
+                                <option value="creditCard">Indomaret</option>
+                                <option value="bankTransfer">Shopeepay</option>
+                                <!-- Add other payment methods if needed -->
+                            </select><br>
+
+       <h2>Order Summary:</h2>
+        <ul id="orderSummary"></ul>
+
+        <button type="submit">Pay Now</button>
+        <button type="button" class="cancel-btn" onclick="goBack()">Cancel</button>
+    </form>
+    
+    <script src="bills.js"></script>
+</body>
+</html>

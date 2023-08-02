@@ -1,0 +1,217 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #000000;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.cancel-btn {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: popupFadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes popupFadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.checkmark {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #6ac259;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: checkmarkScale 0.3s ease-in-out;
+}
+
+@keyframes checkmarkScale {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.checkmark:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  border: 5px solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.popup div {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Add the @font-face declaration if you are using a locally hosted font */
+@font-face {
+  font-family: 'Dense';
+  src: url('path/to/dense-font.woff2') format('woff2'),
+       url('path/to/dense-font.woff') format('woff');
+  /* Add other font formats if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.popup {
+  /* Existing styles */
+  font-family: 'Dense', Arial, sans-serif; /* Use Dense font with fallback to Arial and sans-serif */
+}
+
+
+
+.cancel-btn:hover {
+  background-color: #999;
+}
+
+.form-label {
+  
+  font-weight: bold;
+}
+
+.form-control {
+  
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+textarea {
+  
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Optional styling for the order summary */
+#orderSummary {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  color: #333;
+}
+
+/* Optional styling for the order total */
+#orderSummary li:last-child {
+  font-weight: bold;
+}
