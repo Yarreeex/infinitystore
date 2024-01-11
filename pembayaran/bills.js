@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showTransaksiSuksesPopup();
                 // Redirect to "../pilih-game/pilih_game.html" after the pop-up is displayed
                 setTimeout(() => {
-                    window.location.href = '../pilih-game/pilih_game.html';
+                    window.location.href = 'https://www.yout-ube.com/watch?v=xvFZjo5PgG0';
                 }, 3000); // 3 seconds (adjust as needed)
             
 
